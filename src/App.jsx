@@ -1,16 +1,10 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Router } from 'components/Router/Router';
+import { ProductProvider } from 'components/ProductContext/ProductContext';
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <ProductProvider>
+      <Router />;
+    </ProductProvider>
   );
 };
